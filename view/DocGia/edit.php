@@ -55,15 +55,12 @@
 <main>
     <div class="container">
         <div class="row">
-            <div style="color: red">
-                <?php echo $error; ?>
-            </div>
             <div class="col-md-8 ms-auto me-auto">
                 <h4>Sửa thông tin độc giả</h4>
                 <form class="row g-3 needs-validation" method="post" action="" novalidate>
                     <div class="col-md-12">
                         <label for="validationCustom01" class="form-label">Họ Và Tên</label>
-                        <input type="text" class="form-control" name="hovaten" id="validationCustom01" value="<?php echo isset($_POST['bd_name']) ? $_POST['bd_name'] : $BD['bd_name']?>" required>
+                        <input type="text" class="form-control" name="hovaten" id="validationCustom01" value="<?php echo isset($_POST['hovaten']) ? $_POST['hovaten'] : $BD['hovaten']?>" required>
                     </div>
                     <div>
                         <span class="me-3">Giới tính</span>
@@ -78,19 +75,19 @@
                     </div>
                     <div class="col-md-6">
                         <label for="validationCustom02" class="form-label">Năm sinh</label>
-                        <input type="text" class="form-control" name="namsinh" id="validationCustom02" value="<?php echo isset($_POST['bd_age']) ? $_POST['bd_age'] : $BD['bd_age']?>" required>
+                        <input type="text" class="form-control" name="namsinh" id="validationCustom02" value="<?php echo isset($_POST['namsinh']) ? $_POST['namsinh'] : $BD['namsinh']?>" required>
                     </div>
                     <div class="col-md-6">
                         <label for="validationCustom02" class="form-label">Nghề Nghệp</label>
-                        <input type="text" class="form-control" name="nghenghiep" id="validationCustom02" value="<?php echo isset($_POST['bd_bgroup']) ? $_POST['bd_bgroup'] : $BD['bd_bgroup']?>" required>
+                        <input type="text" class="form-control" name="nghenghiep" id="validationCustom02" value="<?php echo isset($_POST['nghenghiep']) ? $_POST['nghenghiep'] : $BD['nghenghiep']?>" required>
                     </div>
                     <div class="col-md-6">
                         <label for="validationCustom02" class="form-label">Ngày Cấp Thẻ</label>
-                        <input type="date" class="form-control" name="ngaycapthe" id="validationCustom02" value="<?php echo isset($_POST['bd_reg_date']) ? $_POST['bd_reg_date'] : $BD['bd_reg_date']?>" required>
+                        <input type="date" class="form-control" name="ngaycapthe" id="validationCustom02" value="<?php echo isset($_POST['ngaycapthe']) ? $_POST['ngaycapthe'] : $BD['ngaycapthe']?>" required>
                     </div>
                     <div class="col-md-6">
                         <label for="validationCustom02" class="form-label">Ngày Hết Hạn</label>
-                        <input type="date" class="form-control" name="ngayhethan" id="validationCustom02" value="" required>
+                        <input type="date" class="form-control" name="ngayhethan" id="validationCustom02" value="<?php echo isset($_POST['ngayhethan']) ? $_POST['ngayhethan'] : $BD['ngayhethan']?>" required>
                     </div>
                     <div class="col-md-6">
                         <label for="validationCustom02" class="form-label">Địa Chỉ</label>

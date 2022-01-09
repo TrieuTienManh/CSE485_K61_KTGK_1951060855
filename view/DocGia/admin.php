@@ -52,11 +52,6 @@
             </div>
         </nav>
     </div>
-<?php
-include "view/template/header.php";
-//file hiển thị thông báo lỗi
-include 'view/commons/message.php';
-?>
 <main>
     <div class="container">
         <div class="row">
@@ -90,9 +85,9 @@ include 'view/commons/message.php';
                         <?php
                         foreach ($bdonor as $bd) {
                             $urlEdit =
-                            "index.php?controller=blooddonor&action=edit&bdid=" . $bd['madg'];
+                            "index.php?controller=docgia&action=edit&bdid=" . $bd['madg'];
                             $urlDelete =
-                            "index.php?controller=blooddonor&action=delete&bdid=" . $bd['madg'];
+                            "index.php?controller=docgia&action=delete&bdid=" . $bd['madg'];
                         ?>
                             <tr>
                                 <th scope="row"><?php echo $bd['madg'] ?></th>
